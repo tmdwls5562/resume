@@ -1,91 +1,50 @@
-<!Doctype html>
-
-<html>
-
-<head>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=320">
-
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>자기 소개서</title>
-
+<!DOCTYPE html>
+<html lang="en">
+<!-- head : 기본정보를 설정함 -->
+<head >
+    <!-- title : 페이지 제목 부분에 보일 타이틀 -->
+    <title>'이름'을 소계합니다</title>
 </head>
-
+<!-- body : 화면안에 보일 요소들을 포함함 -->
 <body>
+    <!-- header : 시멘틱 태그, 머리부분을 뜻함 -->
+    <header>
+        <!-- h1  : 제목을 정할때 씀-->
+        <h1>자기소개 페이지</h1>
+    </header>
 
-    <h1>자기소개서</h1>
-
-    <p>안녕하세요. 저는 수원대학교에 재학중인 학생입니다. 내년이면 졸업을 하게 되는데요. 졸업 후에는 봉사활동을 좀 더 해볼 생각입니다. 제가 지금 하고 있거나 해보고 싶은 봉사활동을 아래에 정리해 보았습니다.</p>
-
-    <ul>
-
-      <li>해비타트 봉사</li>
-
-      <li>국제난민 관련 봉사</li>
-
-      <li>기아 아동 후원</li>
-
-    </ul>
-
-    <p>혹시 저와 같은 뜻이 있는 분들과 소통하고 싶어요. 제 인스타그램 팔로우 해주세요.(인스타그램 주소 : <a href="www.instagram.com/♡♣♩◁">instagram.com/♡♣♩◁)</a></p>
-
+    <!-- hr  : 가로 줄로 화면 분할-->
+    <hr>
+    <!-- section : 시멘틱 태그, 내용부분을 뜻함 -->
+   <section>
+        <!-- p : 택스트, b : 볼드체, i : 이탈릭체 -->
+        <p><b>내 이름은 </b> <i>'이름'</i></p>
+    
+        <!-- img  : 이미지를 가져옴-->
+        <!-- src : 이미지 주소, 구글에 원하는 사진 검색 => 우클릭 => 이미지 주소 복사, 붙여넣기 -->
+        <p>좋아하는 사진</p>
+        <img src='원하는 이미지 주소'/>
+    
+        <!-- ol  : 번호가 있는 리스트-->
+        <p>자주 가는 사이트 순위</p>
+        <ol>
+            <!-- li  : 리스트 요소 -->
+            <!-- a  : 하이퍼 링크, href : 접속할 사이트 주소 -->
+            <li><a href='http://naver.com'>(네이버)</a></li>
+            <li><a href='https://www.youtube.com/'>(유튜브)</a></li>
+        </ol>
+    
+        <!-- ol  : 번호가 없는 리스트-->
+        <p>취미</p>
+        <ul>
+            <li>게임</li>
+            <li>유튜브</li>
+            <li>등등</li>
+        </ul>
+   </section>
+   <!-- footer : 시멘틱 태그, 하단 부분을 뜻함 -->
+   <footer>
+       info ... 
+   </footer>
 </body>
-
 </html>
-
-
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.logotext{
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: default;
-}
-
-
-.text{
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: default;
-}
-
-
-
-.logotext h2{
-    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-    font-family: 'Jeju Gothic', sans-serif;
-    font-size: 6em;
-    text-align: justify;
-    color: white;
-    z-index: 1;
-    mix-blend-mode: overlay;
-}
-
-
-.text h4{
-    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-    font-family: 'Jeju Gothic', sans-serif;
-    font-size: 2em;
-    text-align: justify;
-    color: white;
-    z-index: 3;
-    mix-blend-mode: overlay;
-}
-
-.li {
-    line-height:50%
-}
